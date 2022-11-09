@@ -16,14 +16,14 @@ $('.main').scroll($.debounce( 1000, function(){
 } ) );
 
 $('.main').scroll(function(event) {
-	var scrollPos = $(document).scrollTop();
+	var scrollPos = $('.main').scrollTop();
 	console.log(scrollPos);
 	$('.menu a').each(function() {
 		var curLink = $(this);
 		var refElement = $(curLink.attr('href'));
 
 		// if (refElement.position().top <= scrollPos + 60) {
-		if (refElement.position().top <= scrollPos) {
+		if (refElement.position().top < scrollPos) {
 			$('.menu a').removeClass('active');
 			curLink.addClass('active');
 
