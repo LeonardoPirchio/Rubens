@@ -315,7 +315,7 @@ li {
   height: 50vh;
   justify-content: space-evenly;
   transform: translateY(-50%);
-  transition: 0.1s all ease;
+  transition: 0.3s all ease;
   opacity: 0;
 }
 
@@ -323,7 +323,7 @@ li {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 2px;
-  transition: 0.1s all ease;
+  transition: 0.3s all ease;
   opacity: .65;
 }
 
