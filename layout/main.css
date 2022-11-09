@@ -97,6 +97,11 @@ body {
 }
 
 body {
+  position: fixed;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
   font-family: "Product Sans";
   font-size: 1.3125rem;
   line-height: 1.4;
@@ -297,171 +302,8 @@ li {
 }
 
 /* ========================
-* ======== Header ========
+* ======== Menu ========
 =========================== */
-header {
-  min-height: 8vh;
-  padding-block: 2vh;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /* border-bottom: 1px solid #000; */
-  background-color: #000;
-}
-
-header ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  /* height: 8vh; */
-}
-
-header ul li {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 5px;
-}
-
-header ul li svg {
-  margin-top: 2px;
-  margin-right: 10px;
-}
-
-header ul li,
-header ul li a {
-  font-size: 12px;
-  text-align: center;
-  line-height: initial;
-}
-
-header ul li a {
-  font-weight: 600;
-  margin-bottom: initial !important;
-}
-
-header ul li a:hover {
-  color: #c10000;
-}
-
-/* ========================
-* ======== Nav ========
-=========================== */
-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 10px 0;
-  /* background-color: #000; */
-  /* box-shadow: 0px 2px 4px 2px #50505085; */
-  z-index: 100;
-}
-
-nav .wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.8s all ease-in-out;
-  z-index: 100;
-}
-
-nav ul li {
-  margin: 30px;
-  opacity: 1;
-  transition: 0.3s all ease;
-}
-
-/* ======== Nav ======== */
-nav ul:hover > li {
-  opacity: 0.3;
-}
-
-nav ul:hover > li:hover {
-  opacity: 1;
-}
-/* ===================== */
-
-.navLigado {
-  transform: translateX(0%) !important;
-}
-
-#burger .line {
-  position: relative;
-  width: 40px;
-  height: 2px;
-  margin: 5px;
-  background-color: #fff;
-  transition: 0.4s all ease-in-out;
-  z-index: 100;
-}
-
-#burger .line:nth-child(2) {
-  transition: none;
-}
-
-.burLigado {
-  position: fixed;
-  right: 20px;
-  z-index: 1000;
-}
-
-@media screen and (max-width: 992px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    /* right: 0;
-        bottom: 0; */
-    left: 0;
-    background: #c10000;
-    transform: translateX(102%);
-  }
-
-  nav ul li {
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  nav ul {
-    flex-direction: row;
-  }
-
-  nav ul li {
-    margin: 10px;
-  }
-
-  #burger {
-    display: none;
-  }
-}
-
-@keyframes navFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
 #menu {
   position: fixed;
   left: 20px;
