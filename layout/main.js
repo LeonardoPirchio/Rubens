@@ -26,9 +26,9 @@ $('.main').scroll(function(event) {
 		if (refElement.position().top < scrollPos) {
 			$('.menu a').removeClass('active');
 			curLink.addClass('active');
-
-		} else {
-			curLink.removeClass('active');
 		}
+		// else {
+		// 	curLink.removeClass('active');
+		// }
 	});
 });
