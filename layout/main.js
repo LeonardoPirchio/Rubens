@@ -22,7 +22,8 @@ $('.main').scroll(function(event) {
 		var curLink = $(this);
 		var refElement = $(curLink.attr('href'));
 
-		if (refElement.position().top <= scrollPos + 60) {
+		// if (refElement.position().top <= scrollPos + 60) {
+		if (refElement.position().top <= scrollPos) {
 			$('.menu a').removeClass('active');
 			curLink.addClass('active');
 
