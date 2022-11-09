@@ -89,12 +89,12 @@
   outline: none;
 }
 
-html,
+/* html,
 body {
   position: relative;
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
+} */
 
 body {
   width: 100%;
