@@ -471,6 +471,8 @@ nav ul:hover > li:hover {
   height: 50vh;
   justify-content: space-evenly;
   transform: translateY(-50%);
+  transition: 0.3s all ease;
+  opacity: 0;
 }
 
 #menu a {
@@ -479,6 +481,10 @@ nav ul:hover > li:hover {
   letter-spacing: 2px;
   transition: 0.3s all ease;
   opacity: .65;
+}
+
+.show {
+  opacity: 1 !important;
 }
 
 .active {

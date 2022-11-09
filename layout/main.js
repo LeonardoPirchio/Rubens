@@ -34,6 +34,13 @@
 /* ========================
 * ====== Menu ========
 =========================== */
+$(window).scroll($.debounce( 1000, true, function(){
+    $('#menu').addClass('show');
+} ) );
+$(window).scroll($.debounce( 1000, function(){
+    $('#menu').removeClass('show');
+} ) );
+
 $(window).scroll(function(event) {
 	var scrollPos = $(document).scrollTop();
 	console.log(scrollPos);
