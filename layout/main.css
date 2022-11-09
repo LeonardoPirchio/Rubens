@@ -103,8 +103,8 @@ html {
 body {
   position: fixed;
   width: 100%;
-  top: 0.5px;
-  bottom: 0.5px;
+  top: 1px;
+  bottom: 1px;
   font-family: "Product Sans";
   font-size: 1.3125rem;
   line-height: 1.4;
