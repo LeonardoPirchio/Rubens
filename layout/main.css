@@ -89,27 +89,19 @@
   outline: none;
 }
 
-/* html,
+html,
 body {
   position: relative;
   scroll-behavior: smooth;
   overflow-x: hidden;
-} */
-
-html {
-  overflow: hidden;
 }
 
 body {
-  position: fixed;
-  width: 100%;
-  top: 1px;
-  bottom: 1px;
   font-family: "Product Sans";
   font-size: 1.3125rem;
   line-height: 1.4;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  /* background-color: var(--color-neutral-900); */
+  background-color: #000;
 }
 
 /* ========================
