@@ -16,7 +16,7 @@ $('.main').scroll($.debounce( 1000, function(){
 } ) );
 
 $('.main').scroll(function(event) {
-	var scrollPos = $('.main').scrollTop();
+	var scrollPos = $(document).scrollTop();
 	console.log(scrollPos);
 	$('.menu a').each(function() {
 		var curLink = $(this);
