@@ -1,0 +1,14 @@
+.burLigado .line:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burLigado .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burLigado .line:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+/*# sourceMappingURL=sass.css.map */
