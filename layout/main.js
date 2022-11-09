@@ -8,14 +8,14 @@
 /* ========================
 * ====== Menu ========
 =========================== */
-$(window).scroll($.debounce( 1000, true, function(){
+$('.main').scroll($.debounce( 1000, true, function(){
     $('.menu').addClass('show');
 } ) );
-$(window).scroll($.debounce( 1000, function(){
+$('.main').scroll($.debounce( 1000, function(){
     $('.menu').removeClass('show');
 } ) );
 
-$(window).scroll(function(event) {
+$('.main').scroll(function(event) {
 	var scrollPos = $(document).scrollTop();
 	console.log(scrollPos);
 	$('.menu a').each(function() {
