@@ -8,12 +8,12 @@
 /* ========================
 * ====== Menu ========
 =========================== */
-$('.main').scroll($.debounce( 1000, true, function(){
-    $('.menu').addClass('show');
-} ) );
-$('.main').scroll($.debounce( 1000, function(){
-    $('.menu').removeClass('show');
-} ) );
+// $('.main').scroll($.debounce( 1000, true, function(){
+//     $('.menu').addClass('show');
+// } ) );
+// $('.main').scroll($.debounce( 1000, function(){
+//     $('.menu').removeClass('show');
+// } ) );
 
 $('.main').scroll(function(event) {
 	var scrollPos = $(document).scrollTop();

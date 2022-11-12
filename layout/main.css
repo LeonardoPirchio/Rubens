@@ -314,34 +314,56 @@ li {
 * ======== Menu ========
 =========================== */
 .menu {
-  display: none;
   position: fixed;
-  left: 20px;
-  top: 50%;
   display: flex;
-  flex-direction: column;
-  height: 50vh;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
-  transform: translateY(-50%);
+  width: 100%;
+  white-space: nowrap;
   transition: 0.3s all ease;
-  opacity: 0;
+  /* opacity: 1; */
 }
 
 .menu a {
+  position: relative;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 2px;
+  margin-block: 10px;
   transition: 0.3s all ease;
   opacity: .65;
 }
 
-.show {
+/* .show {
   opacity: 1 !important;
-}
+} */
 
 .active {
   font-size: 18px !important;
   opacity: 1 !important;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: yellow;
+  /* animation: 0.2s active; */
+}
+
+@keyframes active {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 /* ========================
