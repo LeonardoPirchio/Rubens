@@ -105,20 +105,22 @@ body {
 
 .main {
   position: fixed;
-  top: 0.5px;
+  /* top: 0.5px; */
+  top: 68px;
   bottom: 0.5px;
   width: 100%;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* ========================
 * ======== Section ========
 =========================== */
 section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   section {
     padding: 80px 0;
   }
@@ -140,7 +142,7 @@ section {
   section {
     padding: 80px 0;
   }
-}
+} */
 
 /* ========================
 * ======== Wrapper ========
@@ -314,7 +316,7 @@ li {
 * ======== Menu ========
 =========================== */
 .menu {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -325,6 +327,7 @@ li {
   white-space: nowrap;
   background-color: #000;
   transition: 0.3s all ease;
+  z-index: 100;
   /* opacity: 1; */
 }
 
@@ -369,11 +372,67 @@ li {
 }
 
 /* ========================
-* ======== Entrada ========
+* ======== inicio ========
 =========================== */
-#entrada {
-  min-height: 92vh;
-  padding-top: 325px;
+#inicio {
+  min-height: 82vh;
+  /* padding-top: 325px; */
+  padding-top: 280px;
+  /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/cropped-photo-attractive-young-man-office-working.jpg); */
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/successful-business-man-signing-documents-modern-office.jpg);
+  background-repeat: no-repeat;
+  /* background-size: 165% 100%; */
+  background-size: 250% 100%;
+  /* background-position: -125px; */
+  /* background-position: -80px 40px; */
+  background-position: -150px; /* -150px 50px */
+}
+
+.scrolling {
+  display: block;
+  position: relative;
+  padding-top: 70px;
+}
+.scrolling span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: scrolling 1.5s infinite;
+  animation: scrolling 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes scrolling {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes scrolling {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 /* ========================
@@ -464,7 +523,7 @@ section {
 * ======== Subir ========
 =========================== */
 @media screen and (max-width: 768px) {
-  .subirPagina {
+  .botaoWhatsapp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -481,7 +540,7 @@ section {
     z-index: 1000;
   }
 
-  /* .subirPagina:hover {
+  /* .botaoWhatsapp:hover {
     background-color: gray;
   } */
 }
