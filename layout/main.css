@@ -391,6 +391,12 @@ li {
   background-position: -150px; /* -150px 50px */
 }
 
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
 .scrolling {
   display: block;
   position: relative;
